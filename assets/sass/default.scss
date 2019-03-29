@@ -1,0 +1,50 @@
+@import "compass/css3";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+a{ color: #1d1d1d; }
+a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+body{
+    background: #f8f8f829;
+}
+
+#home{
+    margin-bottom: 2.5rem;
+    h4{ font-size: 2.5rem; }
+    #search-form{
+        margin-top: 2rem;
+        background: #fff;
+        padding: 0.75rem;
+        @include box-shadow(0 0 30px rgba(0,0,0,0.1));
+        .input-group-prepend{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input[type="text"]{
+            border: none;
+            outline: none;
+        }
+        .btn-primary{
+            font-size: 0.9rem;
+        }
+    }
+}
+
+#history{
+    h4{ font-size: 1.5rem; }
+    li{
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+    .list-group-item:hover{
+        background: #f8f8f8;
+        cursor: pointer;
+    }
+}
